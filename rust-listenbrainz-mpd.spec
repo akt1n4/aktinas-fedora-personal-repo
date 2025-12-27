@@ -13,6 +13,8 @@ URL:            https://crates.io/crates/listenbrainz-mpd
 Source:         %{crates_source}
 
 BuildRequires:  cargo-rpm-macros >= 24
+BuildRequires:  openssl-devel
+BuildRequires:  sqlite-devel
 
 %global _description %{expand:
 ListenBrainz submission client for MPD.}
