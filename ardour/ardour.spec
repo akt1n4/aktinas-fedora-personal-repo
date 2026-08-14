@@ -10,7 +10,6 @@ License:        GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND CC0-1.0
 URL:            https://ardour.org/
 
 Source0:        https://github.com/Ardour/ardour/archive/%{version}/ardour-%{version}.tar.gz
-Source1:        http://stuff.ardour.org/loops/ArdourBundledMedia.zip
 Patch0:         ardour-7.0-re-vendor_qm-dsp.patch
 
 BuildRequires:  gcc-c++
@@ -19,7 +18,6 @@ BuildRequires:  git
 BuildRequires:  doxygen
 BuildRequires:  graphviz
 BuildRequires:  itstool
-BuildRequires:  unzip
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
 
@@ -145,10 +143,6 @@ install -vDm 644 ardour.1 -t %{buildroot}%{_mandir}/man1/
 # Move appdata and metainfo to the proper Fedora location
 mkdir -p %{buildroot}%{_metainfodir}
 mv %{buildroot}%{_datadir}/{appdata,metainfo}/*.xml %{buildroot}%{_metainfodir}/ 2>/dev/null || true
-
-# Install MIDI media bundles
-install -vdm 755 %{buildroot}%{_datadir}/%{name}/media/
-unzip %{SOURCE1} -d %{buildroot}%{_datadir}/%{name}/media/
 
 # Desktop and AppStream Validation
 desktop-file-install \
