@@ -4,7 +4,7 @@
 %global crate listenbrainz-mpd
 
 Name:           rust-listenbrainz-mpd
-Version:        2.3.9
+Version:        2.5.1
 Release:        %autorelease
 Summary:        ListenBrainz submission client for MPD
 
