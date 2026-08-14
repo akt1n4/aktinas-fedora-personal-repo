@@ -179,6 +179,3 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.xml
 %{_datadir}/mime/packages/ardour.xml
 %{_metainfodir}/*.xml
 %{_mandir}/man1/%{name}.1*
-
-%changelog
-* %{auto_changelog}
