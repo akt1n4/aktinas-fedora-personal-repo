@@ -1,0 +1,10 @@
+diff -up Ardour-9.0.pre0.1178/gtk2_ardour/ardour.desktop.in.mark-versionized Ardour-9.0.pre0.1178/gtk2_ardour/ardour.desktop.in
+--- Ardour-9.0.pre0.1178/gtk2_ardour/ardour.desktop.in.mark-versionized	2024-11-02 16:53:58.144902200 +0100
++++ Ardour-9.0.pre0.1178/gtk2_ardour/ardour.desktop.in	2025-05-15 00:11:49.424824183 +0200
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-Name=Ardour
++Name=Ardour (Version 9)
+ Comment=Ardour Digital Audio Workstation
+ Exec=@ARDOUR_EXEC@
+ Icon=@ARDOUR_ICON@

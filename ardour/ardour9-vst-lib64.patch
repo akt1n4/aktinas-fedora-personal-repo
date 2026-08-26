@@ -1,0 +1,13 @@
+diff -up Ardour-9.8.0/libs/ardour/plugin_manager.cc.vst-lib64 Ardour-9.8.0/libs/ardour/plugin_manager.cc
+diff -up Ardour-9.8.0/libs/ardour/search_paths.cc.vst-lib64 Ardour-9.8.0/libs/ardour/search_paths.cc
+--- Ardour-9.8.0/libs/ardour/search_paths.cc.vst-lib64	2026-08-20 05:52:57.000000000 +0200
++++ Ardour-9.8.0/libs/ardour/search_paths.cc	2026-08-25 14:51:14.007627930 +0200
+@@ -316,7 +316,7 @@ vst_search_path ()
+ const char *
+ vst_search_path ()
+ {
+-	return "/usr/local/lib/vst:/usr/lib/vst";
++	return "/usr/local/lib64/vst:/usr/local/lib/vst:/usr/lib64/vst:/usr/lib/vst";
+ }
+ 
+ #endif // PLATFORM_WINDOWS
